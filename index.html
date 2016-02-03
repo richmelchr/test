@@ -1,14 +1,15 @@
-<?php include '../head.php'; ?>
 <link href="screen.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="jquery-1.12.0.min.js"></script>
+
 <title>Gallery | Wesll</title>
 
-
+<script src="myscript.js"></script>
 <body id="gallery">
-   <!--identifies current page for navigation bar underline.-->
+
    <div class="wrapper">
 
-      <?php include '../navigation.php'; ?>
-      <div id="logo"><a href="../"><img src="images/logo42-white.png" width="350" height="83" /></a></div>
+      <?php include "navigation.php"; ?>
+      <div id="logo"><a><img src="images/logo42-white.png" width="350" height="83" /></a></div>
       
       <div id="gallery-wrap">
          <div id="media-wrap" class="userSelect">
@@ -19,7 +20,6 @@
                      <a id="sel-pictures" onclick="swap_focus('pictures')" class="active-media">pictures</a>
                      <a id="sel-renders" onclick="swap_focus('renders')">renders</a>
                      <a id="sel-videos" onclick="swap_focus('videos')">videos</a>
-                     <a id="sel-footage" onclick="swap_focus('footage')"><h2>Snowmobile video</h2><h1>...First Test</h1></a>
                   </div>
 
                   <div id="event">
@@ -28,12 +28,10 @@
 
                   <div id="arrow-l" onclick="flip('left')" >
                      <img src="images/media/left9.png" width="17" height="30" id="arrow-l-w" class="show"/>
-                     <!--<img src="../images/media/left1.png" width="17" height="30" id="arrow-l-r" class="hide"/>-->
                   </div>
                   
                   <div id="arrow-r" onclick="flip('right')">
                      <img src="images/media/right9.png" width="17" height="30" id="arrow-r-w" class="show"/>
-                     <!--<img src="../images/media/right1.png" width="17" height="30" id="arrow-r-r" class="hide"/>-->
                   </div>
 
                   <div id="gal-page">
@@ -210,48 +208,39 @@
 
                <div id="preview">
                   <div id="preview-pictures">
-                     <a onclick="swap_box('pictures','snow')"/><img src="images/media/snow/snow-0003.jpg" id="pictures" class="snow preview active-preview"/></a><br />
-                     <a onclick="swap_box('pictures','raw')"/><img src="images/media/raw/raw-1.jpg" id="pictures" class="raw preview"/></a><br />
-                     <a onclick="swap_box('pictures','prototype')"/><img src="images/media/prototype/prototype-1.jpg" id="pictures" class="prototype preview"/></a><br />
-                     <a onclick="swap_box('pictures','event')"/><img src="images/media/events/event-1.jpg" id="pictures" class="event preview"/></a><br />
-                     <a onclick="swap_box('pictures','zoom')"/><img src="images/media/zoom/zoom-1.jpg" id="pictures" class="zoom preview"/></a><br />
-                     <a onclick="swap_box('pictures','box')"/><img src="images/media/box/box-0152.jpg" id="pictures" class="box preview"/></a>
+                     <a onclick="swap_box('pictures','snow')"><img src="images/media/snow/snow-0003.jpg" id="pictures" class="snow preview active-preview"/></a><br />
+                     <a onclick="swap_box('pictures','raw')"><img src="images/media/raw/raw-1.jpg" id="pictures" class="raw preview"/></a><br />
+                     <a onclick="swap_box('pictures','prototype')"><img src="images/media/prototype/prototype-1.jpg" id="pictures" class="prototype preview"/></a><br />
+                     <a onclick="swap_box('pictures','event')"><img src="images/media/events/event-1.jpg" id="pictures" class="event preview"/></a><br />
+                     <a onclick="swap_box('pictures','zoom')"><img src="images/media/zoom/zoom-1.jpg" id="pictures" class="zoom preview"/></a><br />
+                     <a onclick="swap_box('pictures','box')"><img src="images/media/box/box-0152.jpg" id="pictures" class="box preview"/></a>
                   </div>
 
                   <div id="preview-renders">
-                     <a onclick="swap_box('renders','wesll')"/><img src="images/media/wesll/wesll-1.jpg" id="renders" class="wesll preview active-preview"/></a><br />
-                     <a onclick="swap_box('renders','ducati')"/><img src="images/media/ducati/ducati-1.jpg" id="renders" class="ducati preview"/></a><br />
-                     <a onclick="swap_box('renders','wing')"/><img src="images/media/wing/wing-1.jpg" id="renders" class="wing preview"/></a><br />
-                     <a onclick="swap_box('renders','kawasaki')"/><img src="images/media/kawasaki/kawasaki-1.jpg" id="renders" class="kawasaki preview"/></a><br />
-                     <a onclick="swap_box('renders','yamaha')"/><img src="images/media/yamaha/yamaha-1.jpg" id="renders" class="yamaha preview"/></a><br />
-                     <a onclick="swap_box('renders','harley')"/><img src="images/media/harley/harley-1.jpg" id="renders" class="harley preview"/></a><br />
-                     <a onclick="swap_box('renders','aprillia')"/><img src="images/media/aprillia/aprillia-1.jpg" id="renders" class="aprillia preview"/></a><br />
-                     <a onclick="swap_box('renders','triumph')"/><img src="images/media/triumph/triumph-1.jpg" id="renders" class="triumph preview"/></a>
+                     <a onclick="swap_box('renders','wesll')"><img src="images/media/wesll/wesll-1.jpg" id="renders" class="wesll preview active-preview"/></a><br />
+                     <a onclick="swap_box('renders','ducati')"><img src="images/media/ducati/ducati-1.jpg" id="renders" class="ducati preview"/></a><br />
+                     <a onclick="swap_box('renders','wing')"><img src="images/media/wing/wing-1.jpg" id="renders" class="wing preview"/></a><br />
+                     <a onclick="swap_box('renders','kawasaki')"><img src="images/media/kawasaki/kawasaki-1.jpg" id="renders" class="kawasaki preview"/></a><br />
+                     <a onclick="swap_box('renders','yamaha')"><img src="images/media/yamaha/yamaha-1.jpg" id="renders" class="yamaha preview"/></a><br />
+                     <a onclick="swap_box('renders','harley')"><img src="images/media/harley/harley-1.jpg" id="renders" class="harley preview"/></a><br />
+                     <a onclick="swap_box('renders','aprillia')"><img src="images/media/aprillia/aprillia-1.jpg" id="renders" class="aprillia preview"/></a><br />
+                     <a onclick="swap_box('renders','triumph')"><img src="images/media/triumph/triumph-1.jpg" id="renders" class="triumph preview"/></a>
                   </div>
 
                   <div id="preview-videos">
-                     <a onclick="swap_box('videos','vid1')"/><img src="images/media/video1-red.jpg" id="videos" class="vid1 preview active-preview"/></a><br />
-                     <a onclick="swap_box('videos','vid2')"/><img src="images/media/video2-red.jpg" id="videos" class="vid2 preview"/></a><br />
-                     <a onclick="swap_box('videos','vid3')"/><img src="images/media/video3-red.jpg" id="videos" class="vid3 preview"/></a><br />
-                     <a onclick="swap_box('videos','vid4')"/><img src="images/media/video4-red.jpg" id="videos" class="vid4 preview"/></a>
+                     <a onclick="swap_box('videos','vid1')"><img src="images/media/video1-red.jpg" id="videos" class="vid1 preview active-preview"/></a><br />
+                     <a onclick="swap_box('videos','vid2')"><img src="images/media/video2-red.jpg" id="videos" class="vid2 preview"/></a><br />
+                     <a onclick="swap_box('videos','vid3')"><img src="images/media/video3-red.jpg" id="videos" class="vid3 preview"/></a><br />
+                     <a onclick="swap_box('videos','vid4')"><img src="images/media/video4-red.jpg" id="videos" class="vid4 preview"/></a>
                   </div>
 
-                  <div id="preview-footage">
-                     <a onclick="swap_box('footage','footage3')"/><img src="images/media/footage3-red.png" id="footage" class="footage3 preview active-preview"/></a><br />
-                     <a onclick="swap_box('footage','footage2')"/><img src="images/media/footage2-red.png" id="footage" class="footage2 preview"/></a>
-                  </div>
                </div>
 
             </div>
          </div>
 
-         <div id="link-footage3" >download:&nbsp; <a href="images/media/raw/suspension_2.mov" >suspension_2.mov - 447MB - 120fps</a></div>
-         <div id="link-footage2" >download:&nbsp; <a href="images/media/raw/track_1.mov" >track_1.mov - 428MB - 120fps</a></div>
-
       </div>
      
    </div>
-   <?php include '../footer.php'; ?>
+   <?php include 'footer.php'; ?>
 </body>
-
-<script src="myscript.js"></script>

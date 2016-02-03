@@ -14,19 +14,19 @@ function swap_box(tab,panel) {
     $("." + panel).addClass("active-preview");//box around selected preview
 }
 function swap_pager(panel) {
-    $("#page-" + panel).css("display", "block").siblings().css("display", "none");//pager of selected
-    $("#page-" + panel).addClass("pager-active").siblings().removeClass("pager-active");//for arrows to know what is not selected
+    $("#page-" + panel).addClass("pager-active").css("display", "block").siblings().css("display", "none").removeClass("pager-active");//pager of selected
+    //$("#page-" + panel).addClass("pager-active").siblings()//for arrows to know what is not selected
 }
 function swap_event(tab,panel) {
     if (tab == 'videos' || tab == 'footage') {
         var frameString = '<div id="event"><iframe width="750" height="422" src="" frameborder="0" allowfullscreen></iframe></div>';
         $("#event").replaceWith(frameString);
-        $("#event iframe").attr("src", $("#page-" + panel).find(".preview-select").attr("href"));
+        $("#event").find("iframe").attr("src", $("#page-" + panel).find(".preview-select").attr("href"));
         $("#arrow-l,#arrow-r").css("display", "none");
     } else {
         var imgString = '<div id="event"><img src=""></div>';
         $("#event").replaceWith(imgString);
-        $("#event img").attr("src", $("#page-" + panel).find(".preview-select").attr("href"));
+        $("#event").find("img").attr("src", $("#page-" + panel).find(".preview-select").attr("href"));
         $("#arrow-l,#arrow-r").css("display", "block");
     }
 }
@@ -40,12 +40,12 @@ function link_show(tab,panel) {
 }
 //--------------------------------------------------------------------------------------------------------
 $(document).ready(function() {//swap img on mouse enter function
-    $("#gal-page a").mouseenter(function() {
+    $("#gal-page").find('a').mouseenter(function() {
         $("#event").html($("<img>").attr("src", this.href));
         $(this).addClass('preview-select').siblings().removeClass('preview-select');
         return false;
     })
-    $("#gal-page a").click(function() {//when a user clicks on the leaning button | used for mobile
+    $("#gal-page").find('a').click(function() {//when a user clicks on the leaning button | used for mobile
         $("#event").html($("<img>").attr("src", this.href));
         return false;
     })
@@ -57,8 +57,7 @@ $(document).ready(function() {//swap img on mouse enter function
 //     $("#arrow-r-w").toggle();
 //     $("#arrow-r-r").toggle();
 //   })
-})
-//---------------------------------------------------------------------
+})//---------------------------------------------------------------------
 function flip(arrow) {//left and right arrow buttons
     var curPage = $('#gal-page').find('.pager-active').attr('id');
     var curSel = $("#"+curPage).find('.preview-select');
