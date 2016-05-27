@@ -4,7 +4,7 @@
 <meta property='description' content='Wesll develops leaning suspension technologies designed to increase the performance, safety and economy of vehicles used in nearly all forms of transportation.' />
 <link href="screen.css" rel="stylesheet" type="text/css" media="screen" />
 <title>Wesll | Leaning Suspension</title>
-<?php include_once( "analyticstracking.php") ?>
+<!--<?php include_once( "analyticstracking.php") ?>-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <body id="home">
@@ -15,6 +15,14 @@
          
       <div id="feature">
          <p><img src="images/maincontent3.jpg" width="960" height="414" /></p>
+         <div id="new-content-wrap">
+            <div id="new-content">
+               <a href="#" >
+                  <img src="images/new-content.png" width="110" height="61" />
+                  <p>worlds first skiing Snowmobile video</p>
+               </a>
+            </div>
+         </div>
       </div>
 
       <div id="content">

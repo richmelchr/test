@@ -24,7 +24,7 @@
   </div>
   
   <div id="copyright">
-     <li>&copy; 2015 Wesll LLC |</li> 
+     <li>&copy; 2016 Wesll LLC |</li>
 
      <div id="social-up">
         <a href="http://www.facebook.com/wesllcorp" target="_blank"><img src="/images/icons/1.png" width="30" height="30" /></a></li>

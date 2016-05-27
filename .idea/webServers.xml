@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d2cca650-c705-47d7-8757-5ae90628cdfd" name="richmelchr.com/test" url="http://richmelchr.com/">
+        <fileTransfer host="richmelchr.com" port="22" rootFolder="/home/richmelchr/public_html/test" accessType="SFTP" password="dfd3df8bdfebdfcbdfdadfd0dffddf98df9c" username="richmelchr">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

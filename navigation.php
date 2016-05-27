@@ -2,12 +2,12 @@
   <div id="nav-wrap">
     <div id="nav-width">
       <ul id="nav-links">
-        <li id="nav-home"><a href="/">home</a></li>
-        <li id="nav-technology"><a href="/technology/">technology</a></li>
-        <li id="nav-specifications"><a href="/specifications/">specifications</a></li>
+        <li id="nav-home"><a href="/test/">home</a></li>
+        <li id="nav-technology"><a href="/test/technology/">technology</a></li>
+        <li id="nav-specifications"><a href="/test/specifications/">specifications</a></li>
         <!--<li id="nav-components"><a href="/components/">components</a></li>-->   
-        <li id="nav-gallery"><a href="/gallery/">gallery</a></li>
-        <li id="nav-contact"><a href="/contact/">contact</a></li> 
+        <li id="nav-gallery"><a href="/test/gallery/">gallery</a></li>
+        <li id="nav-contact"><a href="/test/contact/">contact</a></li>
         
         <li onclick="ddmenu('options')" id="nav-english" class="userSelect" ><p>English <span id="nav-arrow" >&#9660;</span></p> </li>
           

@@ -20,7 +20,6 @@
                      <a id="sel-pictures" onclick="swap_focus('pictures')" class="active-media">pictures</a>
                      <a id="sel-renders" onclick="swap_focus('renders')">renders</a>
                      <a id="sel-videos" onclick="swap_focus('videos')">videos</a>
-                     <a id="sel-footage" onclick="swap_focus('footage')"><h2>Snowmobile video</h2><h1>...First Test</h1></a>
                   </div>
 
                   <div id="event">
@@ -237,18 +236,10 @@
                      <a onclick="swap_box('videos','vid4')"/><img src="../images/media/video4-red.jpg" id="videos" class="vid4 preview"/></a>
                   </div>
 
-                  <div id="preview-footage">
-                     <a onclick="swap_box('footage','footage3')"/><img src="../images/media/footage3-red.png" id="footage" class="footage3 preview active-preview"/></a><br />
-                     <a onclick="swap_box('footage','footage2')"/><img src="../images/media/footage2-red.png" id="footage" class="footage2 preview"/></a>
-                  </div>
                </div>
 
             </div>
          </div>
-
-         <div id="link-footage3" >download:&nbsp; <a href="../images/media/raw/suspension_2.mov" >suspension_2.mov - 447MB - 120fps</a></div>
-         <div id="link-footage2" >download:&nbsp; <a href="../images/media/raw/track_1.mov" >track_1.mov - 428MB - 120fps</a></div>
-
       </div>
      
    </div>
