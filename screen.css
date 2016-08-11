@@ -94,7 +94,6 @@ ul, li, body, h1, h2, h3, h4, h5, h6, div, p, c {
 }
 #nav-width {
 	width: 960px;
-	margin: 0 auto
 }
 #nav-links li {
 	float: left;
@@ -303,6 +302,11 @@ html {
 	/*position: ;/*1px this needs research*/
 }
 #new-content-wrap {
+	height: 61px;
+	width: 923px;
+	margin: -135px auto 0 auto;
+}
+#new-content-wrap-two {
 	height: 61px;
 	width: 923px;
 	margin: -120px auto 0 auto;
@@ -1720,6 +1724,7 @@ th {
 	position: absolute;
 	display: none;
 }
+#page-vid5,
 #page-vid1,
 #page-vid2,
 #page-vid3,

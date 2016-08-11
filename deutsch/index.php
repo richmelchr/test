@@ -5,7 +5,7 @@
     <div class="wrapper">
         <?php include '../navigation.php'; ?>
 
-        <div id="logo"><a href="../"><img src="../images/logo42-white.png" width="350" height="83" /></a></div>
+        <div id="logo" class="center"><a href="../"><img src="../images/logo42-white.png" width="350" height="83" /></a></div>
 
         <div id="coming-soon">
             <p>Deutsch &Uuml;bersetzung kommt bald</p>

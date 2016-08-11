@@ -9,7 +9,7 @@
    <div class="wrapper">
 
       <?php include '../navigation.php'; ?>
-      <div id="logo"><a href="../"><img src="../images/logo42-white.png" width="350" height="83" /></a></div>
+      <div id="logo" class="center"><a href="../"><img src="../images/logo42-white.png" width="350" height="83" /></a></div>
       
       <div id="gallery-wrap">
          <div id="media-wrap" class="userSelect">
@@ -33,17 +33,15 @@
                   
                   <div id="arrow-r" onclick="flip('right')">
                      <img src="../images/media/right9.png" width="17" height="30" id="arrow-r-w" class="show"/>
-                     <!--<img src="../images/media/right1.png" width="17" height="30" id="arrow-r-r" class="hide"/>-->
+                     <!--<img src="../images/media/right1.png" width="17" height="30" id="arrow-r-r" class="hide"/>--->
                   </div>
 
                   <div id="gal-page">
+                     <div id="page-vid5"><a href="http://www.youtube.com/embed/TecTTvpoHg0?rel=0&amp;showinfo=0" class="preview-select"></a></div>
                      <div id="page-vid1"><a href="http://www.youtube.com/embed/qSMWEd54NcA?rel=0&amp;showinfo=0" class="preview-select"></a></div>
                      <div id="page-vid2"><a href="http://www.youtube.com/embed/85vfwqMiRFQ?rel=0&amp;showinfo=0" class="preview-select"></a></div>
                      <div id="page-vid3"><a href="http://www.youtube.com/embed/2sRi7hIgK-Q?rel=0&amp;showinfo=0" class="preview-select"></a></div>
                      <div id="page-vid4"><a href="http://www.youtube.com/embed/_yjSPKCC4bY?rel=0&amp;showinfo=0" class="preview-select"></a></div>
-
-                     <div id="page-footage3"><a href="https://www.youtube.com/embed/KXhIoymiv54?rel=0&amp;showinfo=0" class="preview-select"></a></div>
-                     <div id="page-footage2"><a href="https://www.youtube.com/embed/-tlUQCcIyXA?rel=0&amp;showinfo=0" class="preview-select"></a></div>
 
                      <div id="page-aprillia">
                         <a href="../images/media/aprillia/aprillia-1.jpg" class="preview-select"></a>
@@ -230,7 +228,8 @@
                   </div>
 
                   <div id="preview-videos">
-                     <a onclick="swap_box('videos','vid1')"/><img src="../images/media/video1-red.jpg" id="videos" class="vid1 preview active-preview"/></a><br />
+                     <a onclick="swap_box('videos','vid5')"/><img src="../images/media/video5-red.jpg" id="videos" class="vid5 preview active-preview"/></a><br />
+                     <a onclick="swap_box('videos','vid1')"/><img src="../images/media/video1-red.jpg" id="videos" class="vid1 preview"/></a><br />
                      <a onclick="swap_box('videos','vid2')"/><img src="../images/media/video2-red.jpg" id="videos" class="vid2 preview"/></a><br />
                      <a onclick="swap_box('videos','vid3')"/><img src="../images/media/video3-red.jpg" id="videos" class="vid3 preview"/></a><br />
                      <a onclick="swap_box('videos','vid4')"/><img src="../images/media/video4-red.jpg" id="videos" class="vid4 preview"/></a>

@@ -15,14 +15,25 @@
          
       <div id="feature">
          <p><img src="images/maincontent3.jpg" width="960" height="414" /></p>
+
+         <div id="new-content-wrap-two">
+            <div id="new-content">
+               <a href="https://youtu.be/qSMWEd54NcA" target="_blank">
+                  <img src="images/new-content-proto.jpg" width="110" height="61" />
+                  <p>worlds first leaning vehicle video</p>
+               </a>
+            </div>
+         </div>
+
          <div id="new-content-wrap">
             <div id="new-content">
-               <a href="#" >
+               <a href="https://youtu.be/TecTTvpoHg0" target="_blank">
                   <img src="images/new-content.png" width="110" height="61" />
                   <p>worlds first skiing Snowmobile video</p>
                </a>
             </div>
          </div>
+
       </div>
 
       <div id="content">

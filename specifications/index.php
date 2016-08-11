@@ -7,7 +7,7 @@
    <!--identifies current page for navigation bar underline.-->
    <div class="wrapper">
       <?php include '../navigation.php'; ?>
-      <div id="logo">
+      <div id="logo" class="center">
          <a href="../"><img src="../images/logo42-white.png" width="350" height="83" />
          </a>
       </div>
